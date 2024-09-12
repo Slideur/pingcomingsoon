@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 1.25rem;
+	font-family: "Libre Franklin", sans-serif;
+}
+
+#logo {
+	margin-top: 2.5rem;
+}
+
+header {
+	text-align: center;
+}
+
+.inscription {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+h1 {
+	font-size: 2.5rem;
+	margin-bottom: 0.313rem;
+}
+
+span {
+	color: hsl(0, 0%, 59%);
+	font-weight: 300;
+}
+
+.subscription {
+	margin-top: 0.625rem;
+	margin-bottom: 1.875rem;
+}
+
+.boxinput {
+	display: flex;
+	gap: 1rem;
+}
+
+.address {
+	border: 1px solid hsl(0, 0%, 59%);
+	border-radius: 1.875rem;
+	padding: 0.938rem;
+	opacity: 0.5;
+}
+
+.address::placeholder {
+	color: hsl(0, 0%, 59%);
+}
+
+.notification {
+	background-color: hsl(223, 87%, 63%);
+	color: white;
+	border: none;
+	border-radius: 1.875rem;
+	width: 10.938rem;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.dashboard {
+	width: 49%;
+	margin-top: 5rem;
+}
+
+.container {
+	margin: 0 auto;
+	width: 21.563rem;
+}
+
+.social {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+	margin-bottom: 2rem;
+}
+
+.network {
+	color: hsl(223, 87%, 63%);
+}
+
+.network:hover {
+	/* border: 1px solid hsl(223, 87%, 63%); */
+	border-radius: 100%;
+	color: white;
+	background-color: hsl(223, 87%, 63%);
+	padding: 0.5rem;
+}
+
+.rights {
+	font-size: small;
+	text-align: center;
+	color: hsl(0, 0%, 59%);
+	margin-bottom: 2rem;
+}
+
+.invalidmail {
+	visibility: hidden;
+	color: red;
+	font-size: 10px;
+	margin-right: 310px;
+}
+
+@media screen and (max-width: 767px) {
+	h1 {
+		font-size: 25px;
+	}
+
+	.boxinput {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.notification {
+		width: 98%;
+		padding: 1rem;
+	}
+
+	.subscription {
+		font-size: 16px;
+	}
+
+	.dashboard {
+		width: 90%;
+		margin-bottom: 10rem;
+	}
+
+	.social {
+		gap: 2rem;
+	}
+
+	.invalidmail {
+		margin-right: 0px;
+		/* text-align: center; */
+	}
+}
+
+@media screen and (width: 320px) {
+	.address {
+		display: inline-block;
+		width: 98%;
+		margin-left: 2rem;
+	}
+
+	.notification {
+		display: inline-block;
+		width: 98%;
+		margin-left: 2rem;
+	}
+
+	.dashboard {
+		width: 98%;
+		margin-left: 2rem;
+	}
+
+	.invalidmail {
+		margin-right: 0px;
+		/* text-align: center; */
+	}
+}
